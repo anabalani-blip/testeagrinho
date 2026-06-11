@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Agro<span>Forte</span></h1>
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#pilares">Pilares</a>
+                <a href="#simulador">Simulador</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Futuro Sustentável</h2>
+            <p>O equilíbrio perfeito entre a alta produtividade no campo e a preservação do meio ambiente.</p>
+            <a href="#simulador" class="btn">Conhecer Tecnologia</a>
+        </div>
+    </section>
+
+    <section id="pilares" class="container sections">
+        <h3 class="section-title">Nossos Pilares de Equilíbrio</h3>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>Produtividade</h3>
+                <p>Uso de tecnologias de precisão e dados para garantir safras fortes, otimizando o potencial de cada hectare.</p>
+            </div>
+            <div class="card">
+                <h3>Preservação</h3>
+                <p>Manejo inteligente da água, conservação do solo e proteção da biodiversidade local.</p>
+            </div>
+            <div class="card">
+                <h3>Sustentabilidade</h3>
+                <p>Garantir que as gerações futuras herdem uma terra fértil, rica e economicamente viável.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="bg-light">
+        <div class="container sections">
+            <h3 class="section-title">Simulador de Eco-Eficiência</h3>
+            <p class="subtitle">Insira os dados da fazenda para calcular o índice de equilíbrio ambiental.</p>
+            
+            <form class="simulador-form" onsubmit="event.preventDefault(); alert('Simulação enviada com sucesso! Dados integrados ao sistema.');">
+                <div class="form-group">
+                    <label for="prod">Produtividade (Sacas/Hectare):</label>
+                    <input type="number" id="prod" placeholder="Ex: 75" required>
+                </div>
+                <div class="form-group">
+                    <label for="agua">Consumo de Água (L/kg):</label>
+                    <input type="number" id="agua" placeholder="Ex: 300" required>
+                </div>
+                <button type="submit" class="btn">Calcular Impacto</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroForte. Repositório focado em soluções agro-sustentáveis.</p>
+    </footer>
+
+</body>
+</html>
